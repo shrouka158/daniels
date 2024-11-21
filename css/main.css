@@ -1,0 +1,309 @@
+/* ==================START STANDARD STYLES============================= */
+
+body{
+    font-family: 
+    Poppins
+     , sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 
+    Montserrat,
+    sans-serif;
+}
+
+:root{
+    --main-color:rgb(28, 28, 28);
+    --bg-main:rgb(28, 28, 28);
+    --bg-main-light:rgb(247, 247, 247);
+}
+
+.main-color{
+    color: var(--main-color);
+}
+.bg-main{
+    background-color: var(--bg-main);
+}
+.bg-main-light{
+    background-color: var(--bg-main-light);
+}
+.padding-section{
+    padding: 70px 0;
+}
+
+/* ===================END STANDARD STYLES====================== */
+/* ================START NAVBAR STYLES================== */
+.navbar{
+    background-color: var(--bg-main);
+}
+.nav-link.active{
+    position: relative;
+}
+
+
+.nav-link.active::before{
+    content: '';
+    width: 75%;
+    height: 1.5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* ===============END NAVBAR STYLES======================= */
+
+
+/* ===============START HOME STYLES==================== */
+
+.home{
+    
+    background-image: linear-gradient(rgba(0 , 0 , 0 ,.623),rgba(0 , 0 , 0 ,.623) ) , url(../imgs/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-page{
+    height: 90vh;
+}
+.home-page .content h1{
+    font-size: 60px;
+    font-weight: 200;
+}
+.home-page .content h1 span{
+    font-weight: 400;
+}
+.home-page .content .icon{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ====================END HOME STYLES=========================== */
+
+
+/* ================START ABOUT STYLES========================= */
+.left-sec .about-img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+}
+
+.left-sec .about-img img{
+    width: 80%;
+}
+.about .about-info p{
+    color: #748182;
+    font-size: 15px;
+    font-weight: 400;
+}
+.about .about-info p span{
+    font-weight: 700;
+}
+
+.progress{
+    height: 30px;
+    margin: 30px 0;
+}
+
+.about .about-info button{
+    padding: 10px 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.about .about-info .btn1{
+    color: #fff;
+}
+
+.about .about-info .btn1:hover{
+    background-color: #fff;
+    color: black;
+}
+.about .about-info .btn2:hover{
+    background-color: var(--bg-main);
+    color: #fff;
+}
+
+
+
+/* =======================END ABOUT STYLES============================ */
+
+/* ===================START SERVICES STYLES========================== */
+.card .cars-body p{
+    color: #748182;
+    
+    font-weight: 400;
+
+}
+.services-cards .card{
+    border: #fff solid ;
+    margin-bottom: 20px;
+}
+.services-cards .card .icon{
+    width: 80px;
+    height: 80px;
+    background-color: var(--bg-main-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+
+}
+.services-cards .card:hover .icon{
+    background-color: var(--bg-main);
+    color: #fff;
+}
+
+/* ===================END SERVICES STYLES================================= */
+
+/* ===================START PORTOFOLIO STYLES============================= */
+.links .nav .nav-item .nav-link.active{
+    position: relative;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.links .nav .nav-item .nav-link.active::after{
+    content: '';
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 0;
+
+}
+.links .nav .nav-item .nav-link{
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.portofolio-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.portofolio-img .work-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255,255, .9);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    transform:translateY(100%) ;
+    border: 6px solid #EEE;
+    
+
+}
+.portofolio-img:hover .work-layer{
+    transform: translateY(0%)
+}
+/* =====================END PORTOFOLIO STYLES===================== */
+
+/* =====================START SLIDER STYLES========================== */
+.carousel{
+    padding: 60px 0;
+}
+.carousel .carousel-inner .carousel-item .carousel-img img{
+    width: 5%;
+    border-radius: 50%;
+    
+}
+.carousel .carousel-inner .carousel-item .carousel-cap .customer{
+    font-size: 10px;
+    color: #EEE;
+}
+.carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #748182;
+}
+
+/* ======================END SLIDER STYLES=========================== */
+
+/* ======================START TEAM STYLES=================================== */
+.team-cards .card .card-body{
+    background-color: rgb(91, 91, 91);
+}
+.team-cards .card{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.team-cards .card .card-layer{
+    position: absolute;
+    top: 1%;
+    bottom: 21%;
+    right: 1%;
+    left: 1%;
+    background-color: rgba(255, 255,255, .9);
+    transform: translateY(130%);
+    transition: all .5s ease-in-out;
+    
+}
+.team-cards .card .card-layer .social-icons{
+    height: 100%;
+}
+
+.team-cards .card .card-layer .social-icons .icon{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.team-cards .card:hover .card-layer{
+    transform: rotate(360deg);
+    
+    
+}
+.team-cards .card img{
+    transition: all .5s ease-in-out;
+}
+.team-cards .card:hover img{
+   transform: scale(1.1 , 1.1);
+}
+/* ======================END TEAM STYLES=============================== */
+
+/* ==================START CONTACT STYLES============================== */
+
+.contact .contact-methods .item .contact-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-main-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+.contact .contact-methods .item:hover .contact-icon{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.data-entry form button{
+    width: 120px;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid var(--main-color);
+}
+/* ==================END CONTACT STYLES================================== */
